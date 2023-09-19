@@ -1,0 +1,51 @@
+audio::-webkit-media-controls-play-button {
+    transform: scale(50,5);
+   background-color: green;
+}
+audio::-webkit-media-controls-timeline {
+  visibility: hidden;
+}
+audio::-webkit-media-controls-volume-slider{
+
+visibility: hidden;    
+}
+audio::-webkit-media-controls-mute-button{
+   visibility: hidden;
+}
+audio::-webkit-media-controls-timeline-container{
+visibility: hidden;
+}
+audio::-webkit-media-controls-current-time-display{
+    visibility: hidden;
+
+}
+audio::-webkit-media-controls-time-remaining-display{
+ visibility: hidden;
+}
+audio::-webkit-media-controls-timeline-container{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-timeline{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-volume-slider{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-volume-slider-container{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-mute-button{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-fullscreen-button{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-rewind-button{
+    visibility: hidden;
+}
+audio::-webkit-media-controls-return-to-realtime-button{
+    visibility: hidden;
+}
+audio .controls progress{
+    display: hidden;
+}

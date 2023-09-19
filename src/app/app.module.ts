@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { ApproutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { VideoComponent } from './video/video.component';
+import { Audio2Component } from './audio2/audio2.component';
+import { IonicModule } from '@ionic/angular';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { PlatformModule } from '@angular/cdk/platform';
+import { fa, faker } from '@faker-js/faker';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VideoComponent,
+    Audio2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ApproutingModule,
+    IonicModule.forRoot(),
+    ScrollingModule,
+    PlatformModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

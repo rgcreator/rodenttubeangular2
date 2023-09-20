@@ -4,15 +4,19 @@ h1{
 font-size: auto;
 }
 body, html{
-    background-image: url('images/fcknaagdierlogo.jpg');
-    background-size: cover;	
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     zoom: 100%;
     height: 100vh;
     overflow-y: scroll;
 }
-
+  body{
+    background-image: url('https://github.com/rgcreator/Rodenttube/blob/main/images/fcknaagdierlogo.jpg?raw=true');
+    background-size: cover;	
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  ion-content{
+    --background: url('https://github.com/rgcreator/Rodenttube/blob/main/images/fcknaagdierlogo.jpg?raw=true') no-repeat fixed cover;
+    }
 a{
   font-size: 15px;
   height: auto;

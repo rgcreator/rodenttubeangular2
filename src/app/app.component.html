@@ -5,10 +5,8 @@
   <title>Rodenttube</title>
 </head>
 	     <body>
-        <article style="background-color: #654321; color: rgb(110,164,100);"><p>Wij gebruiken Clicky. Een privacyvriendelijk alternatief op Google Analytics. Wij doen dit om te zien hoeveel mensen onze website bezoeken. Wij gebruiken geen cookies.</p> <a href="https://clicky.com/terms">Clicky's Terms of Service</a> <br><a href="https://clicky.com/terms/privacy">Privacy Policy</a></article>
-        <a title="Web Analytics" href="https://clicky.com/101391948"></a>
-        <script async data-id="101391948" src="//static.getclicky.com/js"></script>
-
+        <ion-card scrollY="true">
+<ion-item>
         <img src="https://github.com/rgcreator/Rodenttube/blob/main/images/rodenttube%20banner%20bs.png?raw=true" height="50px" class="banner" alt="logo">
         <img src="https://github.com/rgcreator/Rodenttube/blob/main/images/Rodenttube%20logo.png?raw=true" height="50px" alt="logo">
         <div style="background-color: #654321;">
@@ -18,4 +16,9 @@
       <br>
         <a routerLink="/audio"><p>Audio</p></a>
         <a routerLink="/video"><p>Video</p></a>
-      <router-outlet></router-outlet>
+</ion-item>
+      </ion-card>
+
+      <router-outlet><router-outlet>
+
+

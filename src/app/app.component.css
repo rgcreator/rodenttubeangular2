@@ -8,12 +8,6 @@ body, html{
     height: 100vh;
     overflow-y: scroll;
 }
-  body{
-    background-image: url('https://github.com/rgcreator/Rodenttube/blob/main/images/fcknaagdierlogo.jpg?raw=true');
-    background-size: cover;	
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
   ion-content{
     --background: url('https://github.com/rgcreator/Rodenttube/blob/main/images/fcknaagdierlogo.jpg?raw=true') no-repeat fixed cover;
     }

@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.fcknaagdier.rodenttube5"
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    defaultConfig {
+
+  buildToolsVersion '34.0.0'
+  namespace "com.fcknaagdier.rodenttube5"
+  compileSdk 33
+  defaultConfig {
         applicationId "com.fcknaagdier.rodenttube5"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

@@ -8,7 +8,6 @@ audio{
 html{
   height: 100vh;
   width: 100vw;
-  overflow-y: scroll;
 }
 .buttonstyle{
     background-color: #654321;

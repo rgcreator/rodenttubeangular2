@@ -9,14 +9,10 @@ export class VideoComponent implements OnInit{
 constructor() { }
 
 ngOnInit(): void {
-  let titlelement = document.getElementById("title") as HTMLElement;
 let   playvideobutton = document.getElementById("playvideo") as HTMLButtonElement;
 let pausevideobutton = document.getElementById("pausevideo") as HTMLButtonElement;
 let iframe = document.getElementById("iframe") as HTMLIFrameElement;
 let audioenvideo = document.getElementById("video") as HTMLVideoElement;
-  let titlevideo = new String;
-  let title2 = new String;
- let index = 0;
 let videolist = new Array;
 var i = 0;
 let next = document.getElementById('volgendevideo') as HTMLButtonElement;

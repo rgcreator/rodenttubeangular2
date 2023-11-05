@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+declare let clicky: any;
+
 @Component({
   selector: 'app-audio2',
   templateUrl: './audio2.component.html',
@@ -6,16 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Audio2Component implements OnInit{
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 ngOnInit(): void {
-  let author = new String();
+
   let title2 = new String();
-  let title3 = new String();
-  let songtitle2 = new String;
   let Audiolist = new Array;
   let audio = document.getElementById("audio") as HTMLAudioElement;
-let titlelement = document.getElementById("title") as HTMLElement;
 let nextsong = document.getElementById("new-song") as HTMLButtonElement;
 let start = document.getElementById("start") as HTMLButtonElement;
 let pause = document.getElementById("pause") as HTMLButtonElement;
@@ -50,15 +51,21 @@ nextsong.onclick = () => {
 //removes song from array when it ends and plays a new one
  Audiolist.splice(Audiolist.indexOf(title2.toString()), 1);
 //Gets random song
+if (Audiolist.length == 0){
+  alert("Je hebt nu alle knaagdiersongs geluisterd. Nu kan je ze weer opnieuw luisteren in een andere volgorde!")
+  // Save current URL
+  let currentUrl = this.router.url;
+  this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+    this.router.navigate([currentUrl]);
+  });
+} else {
 title2 =  Audiolist[Math.floor(Math.random() *  Audiolist.length)];
 //Sets author of song
 //Gets random song
+clicky.log(audio.src.toString());
 audio.src =  title2.toString();
-
-
-//Reload page if no songs are left
-if (Audiolist.length == 0){
-window.location.reload();
+console.log(audio.src.toString());
+clicky.log(audio.src.toString());
 }
 }
 start.onclick = () => {
@@ -68,8 +75,10 @@ start.onclick = () => {
   //Gets title of song
   audio.load();
   audio.play();
+  clicky.log(audio.src.toString());
   start.style.display = "none";
 }
 }
+
 }
 

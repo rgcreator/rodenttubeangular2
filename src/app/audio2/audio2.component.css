@@ -49,3 +49,6 @@ audio::-webkit-media-controls-return-to-realtime-button{
 audio .controls progress{
     display: hidden;
 }
+.asidebutton1{
+    height: 5px;
+}

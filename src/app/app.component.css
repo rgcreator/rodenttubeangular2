@@ -3,25 +3,18 @@ h1{
     text-align: center;
 font-size: auto;
 }
-body, html{
-    zoom: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-}
-  ion-content{
-    --background: url('https://github.com/rgcreator/Rodenttube/blob/main/images/fcknaagdierlogo.jpg?raw=true') no-repeat fixed cover;
-    }
 a{
-  font-size: 15px;
-  height: auto;
   background-color: #654321;
     color: rgb(110, 164, 110);
     text-align: center;
     width: 100%;
 }
+a:hover{
+  border: 4px solid rgb(110, 164, 110);
+}
 p{
   background-color: #654321;
-  font-size: 15px;
+  font-size: 30px;
 }
 img{
     display: block;

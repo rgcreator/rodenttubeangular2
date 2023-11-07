@@ -1,6 +1,5 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { PlatformModule } from '@angular/cdk/platform';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { IonicModule } from '@ionic/angular';
@@ -14,7 +13,6 @@ import { VideoComponent } from './video/video.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 @NgModule({
   declarations: [
-    
     AppComponent,
     VideoComponent,
     Audio2Component

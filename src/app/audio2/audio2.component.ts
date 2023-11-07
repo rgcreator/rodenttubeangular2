@@ -72,13 +72,11 @@ start.onclick = () => {
   title2 =  Audiolist[Math.floor(Math.random() *  Audiolist.length)];
 
   audio.src =  title2.toString();
-  //Gets title of song
   audio.load();
   audio.play();
   clicky.log(audio.src.toString());
   start.style.display = "none";
 }
 }
-
 }
 
